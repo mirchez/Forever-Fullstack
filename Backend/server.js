@@ -20,7 +20,7 @@ app.use(cors());
 
 //Api Endpoints
 app.get("/", (req, res) => {
-  res.status(200).json("api working");
+  res.send("api working");
 });
 app.use("/api/user", userRouter);
 app.use("/api/product", productRouter);
